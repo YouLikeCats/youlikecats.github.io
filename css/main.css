@@ -1,0 +1,97 @@
+html {
+  background-color: #370D40;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
+.directory-buttonbar {
+  font-size: 20px;
+  background-color: #9769A4;
+  color: #660a52;
+  width: 100%;
+  height: 100%;
+}
+
+.directory-buttonbar:hover {
+  background-color: #660a52;
+  color: #9769A4;
+  transition: 0.5s;
+}
+
+.text-titled p {
+    font-family: "Copperplate", serif;
+    font-size: 20px;
+}
+
+.dark-bg {
+  background-color: #370D40;
+}
+
+div.vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+div.text-center {
+  text-align: center;
+}
+
+div.center {
+  align-items: center;
+}
+
+.primary-color {
+  color: #660a82;
+}
+
+.container-fluid {
+  height: 100vh;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.img-fluid {
+  max-width: 75%;
+  max-width: 300px;
+  align-items: center;
+  align-self: center;
+  /*object-fit: cover;*/
+  height: auto;
+}
+
+#navbar {
+	position:fixed;
+	top: 2vh;
+	left: 2vw;
+}
+
+
+
+div {
+  border: 1px solid purple;
+}
